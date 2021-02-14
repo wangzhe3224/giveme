@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='givemestuff',
-    version='0.4',
+    version='0.4.1',
     author="Zhe Wang",
     author_email="wangzhetju@gmail.com",
     description="Giveme info",

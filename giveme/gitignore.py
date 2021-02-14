@@ -10,7 +10,7 @@ def giveme(names: [str], system: str='macOS', target: str='./.gitignore'):
     url = 'https://raw.githubusercontent.com/github/gitignore/master/{}.gitignore'
     content = b''
     for name in names:
-        _content = requests.get(url.format(name.capitalize()))
+        _content = requests.get(url.format(name))
         content += _content.content
 
     if system:
@@ -24,4 +24,4 @@ def giveme(names: [str], system: str='macOS', target: str='./.gitignore'):
 
 if __name__ == '__main__':
 
-    giveme(['Python'])
+    giveme(['OCaml'])
